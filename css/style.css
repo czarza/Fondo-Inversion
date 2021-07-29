@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600&display=swap');
+
+body {
+  background-color: #21252A;
+  font-family: 'Lexend', sans-serif;
+}
+
+.text-yellow {
+  color: #F0B90B;
+}
+
+.text-gray {
+  color: #21252A;
+}
+
+.text-black {
+  color: #131313;
+}
+
+.text-white {
+  color: white;
+}
