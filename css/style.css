@@ -26,7 +26,7 @@ body {
 }
 
 .circle {
-  background-image: url('././images/background.png');
+  background-image: url('./images/background.png');
   background-position: top right;
   background-repeat: no-repeat;
   background-size: cover;
@@ -34,7 +34,7 @@ body {
 
 @media only screen and (max-width: 767px) {
   .circle {
-    background-image: url('././images/background_mobile.png');
+    background-image: url('./images/background_mobile.png');
     background-position: center;
     background-size: auto 30%;
   }
@@ -42,7 +42,7 @@ body {
 
 @media only screen and (max-width: 991px) and (min-width: 768px) {
   .circle {
-    background-image: url('././images/background_mobile.png');
+    background-image: url('./images/background_mobile.png');
     background-position: center;
     background-size: auto 50%;
   }
