@@ -113,3 +113,7 @@ body {
 .card-img-top {
   height: auto;
 }
+
+.bg-yellow {
+  background-color: #F0B90B;
+}
