@@ -72,7 +72,11 @@ body {
 }
 
 .bg-c-yellow {
-  background: linear-gradient(45deg, #FFB64D, #ffcb80);
+  background: linear-gradient(45deg, #f0bb0b, #f8f296);
+}
+
+.bg-c-yellow-dark {
+  background: linear-gradient(45deg, #ed7800, #efe31e);
 }
 
 .bg-c-pink {
@@ -114,6 +118,6 @@ body {
   height: auto;
 }
 
-.bg-yellow {
-  background-color: #F0B90B;
+.text-yellow {
+  color: #f0bb0b;
 }
