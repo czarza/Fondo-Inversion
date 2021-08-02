@@ -14,22 +14,34 @@
 
 <body>
   <div class="container circle">
-    <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 ">
-      <a href="/" class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-yellow text-decoration-none">
-        <img src="images/logo_yellow.png" alt="Circle" width="40" height="46" class="d-inline-block align-text-top">
-        &nbsp;Fondo de Inversion
-      </a>
 
-      <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
-        <li><a href="soporte.html" class="nav-link px-3 text-white">Soporte</a></li>
-        <li><a href="herramientas.html" class="nav-link px-3 text-white">Herramientas</a></li>
-        <li><a href="blog.html" class="nav-link px-3 text-white">Blog</a></li>
-      </ul>
-
-      <div class="col-md-3 text-end">
-        <button type="button" class="btn btn-primary">Obtener la App</button>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="/">
+          <img src="images/logo_yellow.png" alt="Logo" width="40" height="46">
+          <span class="text-yellow">&nbsp;Fondo de Inversion</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+          aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarText">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="empresa.html">Empresa</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="faq.html">FAQ</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="blog.html">Blog</a>
+            </li>
+          </ul>
+          <button type="button" class="btn btn-primary">Obtener la App</button>
+        </div>
       </div>
-    </header>
+    </nav>
+
 
     <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
       <div class="col-12 col-sm-9 col-lg-6 mx-sm-auto">
@@ -128,7 +140,7 @@
 
     <div class="row row-cols-1 row-cols-md-3 g-lg-5 g-md-3 mt-4">
       <div class="col mt-4">
-        <div class="card h-100 bg-c-dark-blue order-card">
+        <div class="card h-100 bg-c-dark-blue order-card rounded-5">
           <img src="images/acciones.png" class="card-img-top px-5" alt="Bank Stocks">
           <div class="card-body">
             <h3 class="card-title">Acciones</h3>
@@ -142,7 +154,7 @@
         </div>
       </div>
       <div class="col mt-4">
-        <div class="card h-100 bg-c-dark-blue order-card">
+        <div class="card h-100 bg-c-dark-blue order-card rounded-5">
           <img src="images/forex.png" class="card-img-top px-5 pt-lg-5 pb-lg-4 pb-md-4 pt-md-2" alt="Forex Image">
           <div class="card-body">
             <h3 class="card-title pt-lg-2">Forex</h3>
@@ -155,7 +167,7 @@
         </div>
       </div>
       <div class="col mt-4">
-        <div class="card h-100 bg-c-dark-blue order-card ">
+        <div class="card h-100 bg-c-dark-blue order-card rounded-5">
           <img src="images/cripto.png" class="card-img-top px-5" alt="Crypto Coins">
           <div class="card-body">
             <h3 class="card-title">Crypto</h3>
