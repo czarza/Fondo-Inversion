@@ -85,7 +85,30 @@ body {
 }
 
 .bg-c-dark-blue {
-  background: linear-gradient(0deg, #525559, #21252A);
+  background: linear-gradient(0deg, #61666c, #21252A);
+}
+
+
+.card2 {
+  border-radius: 5px;
+  -webkit-box-shadow: 0 1px 2.94px 0.06px rgba(4, 26, 55, 0.16);
+  box-shadow: 0 1px 2.94px 0.06px rgba(4, 26, 55, 0.16);
+  border: none;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.card2 .card-block {
+  padding: 25px;
+}
+
+.order-card i {
+  font-size: 26px;
+}
+
+
+.card-img-top {
+  height: auto;
 }
 
 
@@ -121,6 +144,8 @@ body {
   font-size: 1.5rem;
   border-radius: .75rem;
 }
+
+
 
 
 .card-cover {
