@@ -73,7 +73,7 @@ body {
 }
 
 .bg-c-yellow {
-  background: linear-gradient(45deg, #f0bb0b, #f8f296);
+  background: linear-gradient(150deg, #f0bb0b, #f8f296);
 }
 
 .bg-c-yellow-dark {
@@ -85,7 +85,7 @@ body {
 }
 
 .bg-c-dark-blue {
-  background: linear-gradient(0deg, #61666c, #21252A);
+  background: linear-gradient(45deg, #9965f4, #9965f4);
 }
 
 
