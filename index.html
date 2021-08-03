@@ -218,15 +218,15 @@
   <div class="container-fluid bg-c-yellow-dark my-sm-5 py-sm-5 my-3 py-3">
     <div class="container">
       <div class="row text-center">
-        <div class="col-12 col-md-4 py-sm-2">
+        <div class="col-12 col-md-4 my-2">
           <h3 class="text-dark">$10M en fondos</h3>
           <span class="text-dark">Volumen mensual negociado</span>
         </div>
-        <div class="col-12 col-md-4 py-sm-2">
+        <div class="col-12 col-md-4 my-2">
           <h3 class="text-dark">+100</h3>
           <span class="text-dark">paises admitidos</span>
         </div>
-        <div class="col-12 col-md-4 py-sm-2">
+        <div class="col-12 col-md-4 my-2">
           <h3 class="text-dark">+2000</h3>
           <span class="text-dark">inversores activos</span>
         </div>
@@ -236,7 +236,7 @@
   <div class="container">
     <div id="world-map" style="height: 40vh;"></div>
     <div class="text-center mt-3">
-      <small class="text-yellow">Ubicaciones de nuestros inversionistas </small>
+      <small class="text-yellow">Ubicaciones de nuestros inversionistas</small>
     </div>
   </div>
 
@@ -296,6 +296,8 @@
         map: 'world_mill',
         backgroundColor: 'transparent',
         zoomOnScroll: false,
+        panOnDrag: false,
+        zoomMax: 1,
         series: {
           regions: [{
             scale: {
