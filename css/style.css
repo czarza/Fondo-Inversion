@@ -5,7 +5,6 @@ body {
   font-family: 'Lexend', sans-serif;
 }
 
-
 .text-yellow {
   color: #F0B90B;
 }
@@ -37,8 +36,8 @@ body {
 @media only screen and (max-width: 767px) {
   .circle {
     background-image: url('../images/background_mobile.png');
-    background-position: center;
-    background-size: auto 30%;
+    background-position: calc(50% - 0px) calc(50% - 90px);
+    background-size: auto 33%;
   }
 
   .card-img-top {
@@ -50,8 +49,8 @@ body {
 @media only screen and (max-width: 991px) and (min-width: 768px) {
   .circle {
     background-image: url('../images/background_mobile.png');
-    background-position: center;
-    background-size: auto 50%;
+    background-position: 50% calc(50% - 50px);
+    background-size: auto 45%;
   }
 }
 
