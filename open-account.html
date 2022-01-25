@@ -61,7 +61,7 @@
        
         <div class=" col-11 col-sm-6  col-lg-4 mx-auto">
             <div >
-                <prf-sign-up-widget form-key="5bfe9399760e9545853738"></prf-sign-up-widget>
+                <prf-sign-up-widget form-key="5bfe9399760e9545853738" ></prf-sign-up-widget>
             </div>
         </div>
      
@@ -73,7 +73,12 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.8.2/angular.min.js"></script>
     <script src="https://widgets.blackmarkets.es/crm.widgets.config.js"></script>
     <script src="https://widgets.blackmarkets.es/latest/prf.widgets.js"></script>
-  
+    <script>
+        document.addEventListener('prf.signup.success', function (e) {
+           alert('registro completado', e.detail);
+            location.replace("https://www.blackmarkets.es/open-account.html");
+        });
+    </script>
 </body>
 
 </html>
