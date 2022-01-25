@@ -12,18 +12,16 @@
     <link rel='dns-prefetch' href='https://widgets.blackmarkets.es' />
     
 
-   
-   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
-   
     <link rel="stylesheet" href="https://widgets.blackmarkets.es/latest/prf.widgets.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
     <link href="css/style.css" rel="stylesheet">
 
 </head>
 
 <body>
-    <prf-widget-manager options="{ defaultLang: 'en',brandId: 1}" ng-app="prf">
+    <prf-widget-manager options="{ defaultLang: 'es',brandId: 1}" ng-app="prf">
     <div class="container">
         <nav class="navbar navbar-expand-lg navbar-dark">
             <div class="container-fluid">
@@ -36,41 +34,37 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarText">
-                    <ul class="navbar-nav me-auto ">
-                        
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="empresa.html">Empresa</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="faq.html">FAQ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="terminos.html">Términos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="comisiones.html">Comisiones</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="bm-pro.html">BM PRO</a>
+                          </li>
                     </ul>
-                    <div ng-class="{'is-customer' : prf.customer}">
-                        <div ng-cloak ng-show="!prf.customer">
-                            <prf-login-widget></prf-login-widget>
-                            <a href="open-account.html" class="text-yellow olvidar pr-3">
-                                Registrarse
-                            </a>
-                            <a href="forgot-password.html" class="text-white olvidar">
-                                Olvidaste tu contraseña?
-                            </a>
-                        </div>
-                    </div>
                 </div>
             </div>
         </nav>
+    
     </div>
     
-    <div class="px-0 pt-5 text-center bg-white">
-        <img class="d-block mx-auto" src="images/logo_yellow.png" alt="" width="75" height="80">
-        <h1 class="display-4 fw-bold">Black Markets PRO</h1>
-        <div class="col-lg-6 mx-auto">
-            <p class="lead mb-4 ">En Black Markets constantemente nos estamos actualizando, ofreciendote un rango amplio
-            de servicios</p>
-            <div class="mb-5">
-               
+    <div class="py-5 text-center bg-white">
+       
+        <div class=" col-11 col-sm-6  col-lg-4 mx-auto">
+            <div >
+                <prf-sign-up-widget form-key="5bfe9399760e9545853738"></prf-sign-up-widget>
             </div>
         </div>
-        <div class="overflow-hidden" style="max-height: 30vh;">
-            <div class="container px-5">
-                <img src="images/screenshot.png" class="img-fluid border rounded-3 shadow-lg mb-4" alt="Example image"
-                    width="700" height="500" loading="lazy">
-            </div>
-        </div>
+     
     </div>
 
     </prf-widget-manager>
