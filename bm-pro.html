@@ -23,7 +23,7 @@
 
 <body>
     <prf-widget-manager options="{defaultLang: 'es',brandId: 1}" ng-app="prf">
-    <!-- <div class="px-4 py-5 my-5 text-center">
+    <div class="px-4 py-5 my-5 text-center">
         <img class="d-block mx-auto mb-4" src="images/logo_yellow.png" alt="" width="80" height="80">
         <h1 class="display-5 fw-bold text-white">Black Markets Pro</h1>
         <div class="col-lg-6 mx-auto">
@@ -36,19 +36,8 @@
                 <prf-login-widget></prf-login-widget>
             </div>
         </div>
-    </div> -->
-    <h1>Welcome to my site</h1>
-    <prf-login-widget></prf-login-widget>
-    <form name="my-ignored-form" ng-non-bindable>
-        {{ this won't be compiled }}
-        <input type="text" />
-    </form>
-    <!-- This will be compiled as normal -->
-    <prf-deposit-widget></prf-deposit-widget>
-    <div ng-non-bindable>
-        <!-- Since we are in an ignored element, this won't work: -->
-        <span ng-if="prf.customer">Hi customer!</span>
     </div>
+   
     </prf-widget-manager>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
