@@ -22,7 +22,7 @@
 
 <body >
     <prf-widget-manager options="{ defaultLang: 'es',brandId: 1}" ng-app="prf">
-        <!-- <prf-cfd-platform-top-bar
+        <prf-cfd-platform-top-bar
         customer="prf.customer"
         trading-account="prf.tradingAccount"
         theme="PLATFORM_THEME"
@@ -36,8 +36,10 @@
         is-platform-page="true"
         logout-redirect-url="''"
       >
-       
-      </prf-cfd-platform-top-bar> -->
+        <logo-element ng-cloak>
+          <img src="images/logo_yellow.png" alt="Logo" width="40" height="46">
+        </logo-element>
+      </prf-cfd-platform-top-bar>
         <prf-platform-loader-widget
           selected-platform="'CFD'"
           platform-options="
