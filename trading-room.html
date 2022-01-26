@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <title>Black Markets</title>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="icon" type="images/vnd.microsoft.icon" href="images/logo.ico">
+    <link rel='dns-prefetch' href='https://cdnjs.cloudflare.com' />
+    <link rel='dns-prefetch' href='https://widgets.blackmarkets.es' />
+    
+
+    <link rel="stylesheet" href="https://widgets.blackmarkets.es/latest/prf.widgets.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <link href="css/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <prf-widget-manager options="{ defaultLang: 'es',brandId: 1}" ng-app="prf">
+        <prf-cfd-platform-top-bar
+        customer="prf.customer"
+        trading-account="prf.tradingAccount"
+        theme="PLATFORM_THEME"
+        home-url="'https://blackmarkets.es/bm-pro.html'"
+        deposit-url="'https://blackmarkets.es/deposit/'"
+        account-url="'https://blackmarkets.es/account-summary/'"
+        sign-up-url="'https://blackmarkets.es/open-account'"
+        forgot-password-url="'https://blackmarkets.es/forgot-password'"
+        default-account-cancel-redirect-url="'https://blackmarkets.es/account-summary/'"
+        default-account-created-redirect-url="''"
+        is-platform-page="true"
+        logout-redirect-url="''"
+      >
+        <logo-element ng-cloak>
+          
+        </logo-element>
+      </prf-cfd-platform-top-bar>
+        <prf-platform-loader-widget
+          selected-platform="'CFD'"
+          platform-options="
+              {
+                CFD: {
+                  pluginUrl: 'https://tc-platform.blackmarkets.es/forex/11.7.8-1-g0bcb/11.7.8-1-g0bcb/platformLoader.js',
+                  brandToken: 'ad464355-4a4e-60bf-be64-d5b430c56775',
+                  documentDomain: 'blackmarkets.es',
+                  theme: 'mid'
+                },
+                BUNDLE: {
+                  pluginUrl: 'https://tc-platform.blackmarkets.es/bundle/11.7.8-1-g0bcb/11.7.8-1-g0bcb/platformLoader.js',
+                  brandToken: '7bc290d8-b5af-2610-09a1-b850186127f7',
+                  documentDomain: 'blackmarkets.es',
+                  theme: 'mid'
+                  },
+                MT4: {
+                  pluginUrl: 'https://stage.quotecores.com/js/index.a1156ee233b3d0170402.js',
+                  pluginOptions: {
+                      BASE_PATH: &#039;http://trading.blackmarkets.es/&#039;,
+      API_PATH: &#039;https://trading.blackmarkets.es/api/v1/&#039;,
+      BRAND_MAIN_URL: &#039;https://blackmarkets.es/&#039;,
+      STREAMING_PATH: &#039;wss://trading.blackmarkets.es/stream&#039;,
+      WITH_HEADER: false,
+      WT_ACCENT_COLOR: &#039;#001d3b&#039;,
+      WT_LOGO_URL: &#039;https://s3.eu-central-1.amazonaws.com/wt.quotecores.com/header-logo-demo.png&#039;,
+      WT_LOADER_URL: &#039;https://s3.eu-central-1.amazonaws.com/wt.quotecores.com/loader.gif&#039;,
+      WT_LOADING_SCREEN_URL: &#039;https://s3.eu-central-1.amazonaws.com/wt.quotecores.com/loading-screen.svg&#039;,
+      WT_LOADING_SCREEN_BACKGROUND_URL: &#039;&#039;,
+      SOCIAL_TRADING_ENABLED: true
+            }
+          }
+        }"></prf-platform-loader-widget>
+        <prf-site-location-tracking-widget
+          page-name="'Trading Room:CFD'"
+        ></prf-site-location-tracking-widget>
+      </prf-widget-manager>
+
+    </prf-widget-manager>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.8.2/angular.min.js"></script>
+    <script src="https://widgets.blackmarkets.es/crm.widgets.config.js"></script>
+    <script src="https://widgets.blackmarkets.es/latest/prf.widgets.js"></script>
+  
+</body>
+
+</html>
