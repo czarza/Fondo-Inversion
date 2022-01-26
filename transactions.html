@@ -105,11 +105,8 @@
                                 class="list-group-item  border-end-0 d-inline-block text-truncate"
                                 data-bs-parent="#sidebar"><i class="bi bi-card-list"></i> <span>Historial</span></a>
                             <a href="documents.html" class="list-group-item  border-end-0 d-inline-block text-truncate"
-                                data-bs-parent="#sidebar"><i class="bi bi-file-earmark"></i> <span>Docuentos</span></a>
-                            <a href="questionnaire.html"
-                                class="list-group-item  border-end-0 d-inline-block text-truncate"
-                                data-bs-parent="#sidebar"><i class="bi bi-question-circle"></i>
-                                <span>Cuestionario</span></a>
+                                data-bs-parent="#sidebar"><i class="bi bi-file-earmark"></i> <span>Documentos</span></a>
+                            
                             <a href="trading-room.html"
                                 class="list-group-item  border-end-0 d-inline-block text-truncate"
                                 data-bs-parent="#sidebar"><i class="bi bi-currency-exchange"></i> <span>Trading
@@ -125,28 +122,16 @@
                 </div>
                 <main class="col ps-md-2 pt-5 bg-gray-100">
                     <a href="#" data-bs-target="#sidebar" data-bs-toggle="collapse"
-                        class="border rounded-1 border-warning p-1 text-decoration-none link-warning"><i
+                        class="border rounded-1 border-secondary p-1 text-decoration-none link-secondary"><i
                             class="bi bi-list"></i> MENU</a>
                     <div class="page-header pt-3">
-                        <h2 class=" ">Bienvenido {{prf.customer.firstName}} {{prf.customer.lastName}}</h1>
+                        <h2 class=" ">Historial de Transacciones</h1>
                     </div>
 
                     <hr>
                     <div class="row">
                         <div class="col-12">
-                            <div class="row">
-                                <span>ID: {{prf.tradingAccount.externalAccountId}}</span>
-                            </div>
-                            <div class="">
-                                <span>Balance: </span>
-                                <prf-account-balance-widget ng-cloak ng-if="prf.tradingAccount" field="balance"
-                                    minimum-fraction-digits="4" maximum-fraction-digits="4">
-                                </prf-account-balance-widget>
-                            </div>
-                            <div class="">
-                                <span>Cuentas: </span>
-                                <prf-account-switcher ng-cloak ng-if="prf.tradingAccount"></prf-account-switcher>
-                            </div>
+                            <prf-trading-account-widget ng-if="prf.tradingAccount"></prf-trading-account-widget>
                         </div>
                     </div>
                 </main>

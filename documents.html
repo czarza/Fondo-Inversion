@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <title>Black Markets</title>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="icon" type="images/vnd.microsoft.icon" href="images/logo.ico">
+
+    <link rel='dns-prefetch' href='https://cdnjs.cloudflare.com' />
+    <link rel='dns-prefetch' href='https://widgets.blackmarkets.es' />
+
+    <link rel="stylesheet" href="https://widgets.blackmarkets.es/latest/prf.widgets.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/css/bootstrap.min.css"
+        integrity="sha512-GQGU0fMMi238uA+a/bdWJfpUGKUkBdgfFdgBm72SUQ6BeyWjoY/ton0tEjH+OSH9iP4Dfh+7HM0I9f5eR0L/4w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <link href="css/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <prf-widget-manager options="{ defaultLang: 'en',brandId: 1}" ng-app="prf">
+
+        <div class="container" ng-show="!prf.customer">
+            <nav class="navbar navbar-expand-md navbar-dark">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="index.html">
+                        <img src="images/logo_yellow.png" alt="Logo" width="40" height="46">
+                        <span class="text-yellow">BM PRO</span>
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+                        aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarText">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0"></ul>
+                        <div>
+                            <div>
+
+                                <a href="open-account.html" class="text-yellow link-warning olvidar pe-3">
+                                    Registrarse
+                                </a>
+                                <a href="forgot-password.html" class=" text-yellow link-warning olvidar">
+                                    Olvidaste tu contraseña?
+                                </a>
+
+                                <prf-login-widget> </prf-login-widget>
+                                <!--LOGIN MODULE -->
+
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <div class=" px-0 pt-5 text-center bg-gray-200" ng-show="!prf.customer">
+            <!-- NO HA INICIADO  -->
+            <img class="d-block mx-auto" src="images/logo_yellow.png" alt="" width="75" height="80">
+            <h1 class="display-4 fw-bold">Black Markets PRO</h1>
+            <div class="col-lg-6 mx-auto">
+                <p class="lead mb-4 ">En Black Markets constantemente nos estamos actualizando, ofreciendote un rango
+                    amplio
+                    de servicios.</p>
+                <div class="mb-5">
+
+                </div>
+            </div>
+            <div class="overflow-hidden" style="max-height: 30vh;">
+                <div class="container px-5">
+                    <img src="images/screenshot.png" class="img-fluid border rounded-3 shadow-lg mb-4"
+                        alt="Screenshot Trading Room" width="700" height="500" loading="lazy">
+                </div>
+            </div>
+        </div>
+
+
+        <div class="container-fluid  " ng-show="prf.customer">
+            <div class="row flex-nowrap">
+                <div class="col-auto px-0">
+                    <div id="sidebar" class="collapse collapse-horizontal show">
+                        <div id="sidebar-nav" class="list-group border-0 rounded-0 text-sm-start min-h-screen">
+                            <a href="bm-pro.html" class="py-4 px-2">
+                                <img src="images/logo_yellow.png" alt="Logo" width="30" height="33">
+                                <span class="text-yellow fs-5">BM PRO</span>
+                            </a>
+                            <a href="account-summary.html"
+                                class="list-group-item  border-end-0 d-inline-block text-truncate"
+                                data-bs-parent="#sidebar"><i class="bi bi-wallet2"></i> <span>Resumen</span> </a>
+                            <a href="personal-info.html"
+                                class="list-group-item  border-end-0 d-inline-block text-truncate"
+                                data-bs-parent="#sidebar"><i class="bi bi-person"></i> <span>Cuenta</span></a>
+                            <a href="deposit.html" class="list-group-item  border-end-0 d-inline-block text-truncate"
+                                data-bs-parent="#sidebar"><i class="bi bi-download"></i> <span>Depositar</span></a>
+                            <a href="withdrawal.html" class="list-group-item  border-end-0 d-inline-block text-truncate"
+                                data-bs-parent="#sidebar"><i class="bi bi-upload"></i> <span>Retirar</span></a>
+                            <a href="internal-transfer.html"
+                                class="list-group-item  border-end-0 d-inline-block text-truncate"
+                                data-bs-parent="#sidebar"><i class="bi bi-arrow-left-right"></i>
+                                <span>Transferencias</span></a>
+                            <a href="transactions.html"
+                                class="list-group-item  border-end-0 d-inline-block text-truncate"
+                                data-bs-parent="#sidebar"><i class="bi bi-card-list"></i> <span>Historial</span></a>
+                            <a href="documents.html" class="list-group-item  border-end-0 d-inline-block text-truncate"
+                                data-bs-parent="#sidebar"><i class="bi bi-file-earmark"></i> <span>Documentos</span></a>
+                            
+                            <a href="trading-room.html"
+                                class="list-group-item  border-end-0 d-inline-block text-truncate"
+                                data-bs-parent="#sidebar"><i class="bi bi-currency-exchange"></i> <span>Trading
+                                    Room</span></a>
+                            <a href="refer-a-friend.html"
+                                class="list-group-item  border-end-0 d-inline-block text-truncate"
+                                data-bs-parent="#sidebar"><i class="bi bi-envelope"></i> <span>Invita</span></a>
+                            <a href="" class="list-group-item  border-end-0 d-inline-block text-truncate"
+                                data-bs-parent="#sidebar" onclick="prf.loginWidget.logout()"><i
+                                    class="bi bi-door-closed"></i> <span>Cerrar Sesión</span></a>
+                        </div>
+                    </div>
+                </div>
+                <main class="col ps-md-2 pt-5 bg-gray-100">
+                    <a href="#" data-bs-target="#sidebar" data-bs-toggle="collapse"
+                        class="border rounded-1 border-secondary p-1 text-decoration-none link-secondary"><i
+                            class="bi bi-list"></i> MENU</a>
+                    <div class="page-header pt-3">
+                        <h2 class=" ">Expediente Electronico</h1>
+                            <div class="small">
+                                <p>Proporcione una identificación con fotografia y comprobante de domicilio. Ejemplos</p>
+                                <ul class="list">
+                                    <li>Identificación: Pasaporte, Licencia de Conducir.</li>
+                                    <li>Comprobante de Domicilio: Estado de Cuenta del Banco, Recibo de Luz, Recibo de Plan Telefónico</li>
+                                </ul>
+                                <p>Asegurese que la identificacion no este vencida y el comprobante de domicilio con antiguedad no mayor a 3 meses.<br />
+                                Si los depósitos se realizaron con tarjeta de crédito o débito, también se debe presentar una copia de la tarjeta.<br />
+                                El nombre del titular de la tarjeta, la fecha de vencimiento y los últimos 4 dígitos deben estar visibles, todos los demás números pueden estar cubiertos.
+                                </p>
+                            </div>
+                    </div>
+
+                    <hr>
+                    <div class="row">
+                        <div class="col-12">
+                            <prf-documents-widget ng-if="prf.tradingAccount"></prf-documents-widget>
+                        </div>
+                    </div>
+                </main>
+            </div>
+        </div>
+    </prf-widget-manager>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/js/bootstrap.min.js"
+        integrity="sha512-OvBgP9A2JBgiRad/mM36mkzXSXaJE9BEIENnVEmeZdITvwT09xnxLtT4twkCa8m/loMbPHsvPl0T8lRGVBwjlQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.8.2/angular.min.js"></script>
+    <script src="https://widgets.blackmarkets.es/crm.widgets.config.js"></script>
+    <script src="https://widgets.blackmarkets.es/latest/prf.widgets.js"></script>
+</body>
+
+</html>
