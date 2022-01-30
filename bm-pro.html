@@ -111,9 +111,12 @@
                             <span>Balance: </span>
                             <prf-account-balance-widget ng-cloak ng-if="prf.tradingAccount" field="balance" minimum-fraction-digits="2" maximum-fraction-digits="4"></prf-account-balance-widget>
                         </div>
-                        <div class="">
+                        <div class="col-12 col-md-6 col-lg-3 col-xl-1 p-0 m-0">
                             <span>Cuentas: </span>
-                            <prf-account-switcher ng-cloak ng-if="prf.tradingAccount"></prf-account-switcher>
+                            <div class="loginprfw__account-switcher prfw-common p-0 m-0">
+                                <prf-account-switcher ng-cloak ng-if="prf.tradingAccount"></prf-account-switcher>
+                            </div>
+                           
                         </div>
                     </div>
                 </div>
