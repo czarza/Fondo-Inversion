@@ -100,23 +100,33 @@
  
 
       </prf-cfd-platform-top-bar>
-        <prf-platform-loader-widget
-          selected-platform="'CFD'"
-          platform-options="
-              {
-                CFD: {
-                  pluginUrl: 'https://tc-platform.grupoblack.co/forex/11.7.8-1-g0bcb/11.7.8-1-g0bcb/platformLoader.js',
-                  brandToken: 'ad464355-4a4e-60bf-be64-d5b430c56775',
-                  documentDomain: 'grupoblack.co',
-                  theme: 'mid'
-                },
-                BUNDLE: {
-                  pluginUrl: 'https://tc-platform.grupoblack.co/bundle/11.7.8-1-g0bcb/11.7.8-1-g0bcb/platformLoader.js',
-                  brandToken: '7bc290d8-b5af-2610-09a1-b850186127f7',
-                  documentDomain: 'grupoblack.co',
-                  theme: 'mid'
-                  },
-                
+        <prf-platform-loader-widget selected-platform="'CFD'" platform-options="
+                      {
+                        CFD: {
+                          pluginUrl: 'https://tc-platform.grupoblack.co/forex/11.7.8-1-g0bcb/11.7.8-1-g0bcb/platformLoader.js',
+                          brandToken: '18292c37-5e5a-4e6c-3627-f08f5aca3d42',
+                          documentDomain: 'grupoblack.co',
+                          theme: 'mid'
+                        },
+                        BUNDLE: {
+                          pluginUrl: 'https://tc-platform.grupoblack.co/bundle/11.7.8-1-g0bcb/11.7.8-1-g0bcb/platformLoader.js',
+                          brandToken: '9b1caa73-1770-f3b1-fb75-4ccbd6bc95e4',
+                          documentDomain: 'grupoblack.co',
+                          theme: 'mid'
+                          },
+        				MT4:{
+        					pluginUrl: 'https://trading.quotecores.com/js/index.a057edb1c0bc50d87f9f.js',
+        					pluginOptions:{
+        						BRAND_MAIN_URL: 'https://grupoblack.co/',
+        						WT_ACCENT_COLOR: '#000',
+        						WT_LOGO_URL: 'https://s3.eu-central-1.amazonaws.com/wt.quotecores.com/grupoblack-logo.png',
+        						WT_LOADER_URL: 'https://s3.eu-central-1.amazonaws.com/wt.quotecores.com/loader.gif',
+        						WT_LOADING_SCREEN_URL: 'https://s3.eu-central-1.amazonaws.com/wt.quotecores.com/loading_screen_circle.gif',
+        						WT_LOADING_SCREEN_BACKGROUND_URL: 'https://s3.eu-central-1.amazonaws.com/wt.quotecores.com/login_bg.jpg',
+        						SOCIAL_TRADING_ENABLED: false,
+        						WITH_HEADER: false
+        					}
+        				}     
         }"></prf-platform-loader-widget>
         <prf-site-location-tracking-widget
           page-name="'Trading Room:CFD'"
