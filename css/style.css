@@ -157,7 +157,6 @@ a {
   text-decoration: none;
 }
 
-
 #sidebar-nav {
   width: 160px;
 }
@@ -166,18 +165,18 @@ a {
   padding: 0px;
 }
 
-#sidebar{
-  
+#sidebar {
 }
 
-.list-group-item{
+.list-group-item {
   font-size: 14px;
   background-color: #21252a;
   color: white;
 }
 
-
-
 .list-group-item:hover {
-  color:gray;
+  color: gray;
+}
+.fade:not(.show) {
+  opacity: 100;
 }
