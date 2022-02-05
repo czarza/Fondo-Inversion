@@ -180,3 +180,7 @@ a {
 .fade:not(.show) {
   opacity: 100;
 }
+
+.arial {
+  font-family: Arial;
+}
