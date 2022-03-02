@@ -1,8 +1,8 @@
 const CrmWidgetsConfigModule = angular.module("prf.widgets.config", []);
 
 const EnvConfig = {
-  api: "https://api.grupoblack.co/",
-  streamer: "https://streamer.grupoblack.co/",
+  api: "https://api.grupobm.co/",
+  streamer: "https://streamer.grupobm.co/",
   requestCache: "true",
 };
 
